@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+body{
+background-image: url('https://wallpaperplay.com/walls/full/8/0/4/131018.jpg');
+background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+font-family: 'Indie Flower', cursive;
+font-size: 24px;
+color: white;;
+margin: 0;
+}
+
+.bg-dark{
+background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header{
+  text-align: center;
+  font-size: 60px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black!important;
+}
+
+.hometext{
+margin: auto;
+text-align: center;
+color: black;
+max-width: 80%;
+height: 300px;
+padding: 30px;
+background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.createhaiku{
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+color: black;
+max-width: 80%;
+height: auto;
+padding: 30px;
+background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form-group{
+  width: 500px;
+  text-align: center;
+}
+.poems {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+max-width: 80%;
+  height: auto;
+  padding: 30px;
+  background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-primary {
+  color: #fff;
+    background-color: purple;
+    border-color: purple;
+    width: 150px;
+    margin: 20px;
+}
+.btn-danger{
+  color: #fff;
+    background-color: Black;
+    border-color: black;
+    width: 150px;
+    margin: 20px;
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+}
