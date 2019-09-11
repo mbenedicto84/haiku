@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # haiku
 
 ## Project setup
@@ -27,3 +28,6 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# haiku
+>>>>>>> 7aa80f10fa2fce3ab1193e3aa2f78c40165a920e
