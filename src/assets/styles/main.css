@@ -14,10 +14,22 @@ margin: 0;
 ul,li {
   list-style: none;
 }
+footer{
+  font-size: .8em;
+  text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+padding-top:10px;
+padding-bottom:10px;
+color: black;
+background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+}
+
 
 .bg-dark{
 background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
 .header{
@@ -37,7 +49,7 @@ max-width: 80%;
 height: 300px;
 padding: 30px;
 background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
 .createhaiku{
@@ -50,7 +62,7 @@ max-width: 80%;
 height: auto;
 padding: 30px;
 background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
 .form-group{
@@ -68,7 +80,7 @@ max-width: 80%;
   height: auto;
   padding: 30px;
   background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -81,9 +93,10 @@ max-width: 80%;
   color: black;
 max-width: 80%;
   height: auto;
+  margin-bottom: 75px;
   padding: 30px;
   background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -94,12 +107,44 @@ max-width: 80%;
     width: 150px;
     margin: 20px;
 }
+.btn-primary:hover {
+  color: black;
+    background-color: white;
+    border-color: black;
+    width: 150px;
+    margin: 20px;
+}
 .btn-danger{
   color: #fff;
     background-color: Black;
     border-color: black;
     width: 150px;
     margin: 20px;
+}
+.btn-danger:hover{
+  color: black;
+    background-color: white;
+    border-color: black;
+    width: 150px;
+    margin: 20px;
+}
+
+button{
+  color: #fff;
+    background-color: purple;
+    border-color: purple;
+    width: 150px;
+    margin: 20px;
+    border-radius: 5px
+}
+
+button:hover{
+  color: black;
+    background-color: white;
+    border-color: black;
+    width: 150px;
+    margin: 20px;
+    border-radius: 5px;
 }
 @media (min-width: 1200px){
 .container {

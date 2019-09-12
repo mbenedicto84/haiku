@@ -22,7 +22,7 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      data: [],
+      data:[],
       loading: true,
       show:true
 
@@ -33,13 +33,11 @@ export default {
             rerender(){
             window.location.reload()
                     }
-
         },
   mounted () {
   axios
-    .get('https://www.poemist.com/api/v1/randompoems')
+    .get('https://cors-anywhere.herokuapp.com/https://www.poemist.com/api/v1/randompoems')
     .then(response => {
-      console.log(response)
       this.data = response.data
       this.loading = false
     })

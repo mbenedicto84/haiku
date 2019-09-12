@@ -19,6 +19,9 @@
     <transition name="fade">
       <router-view></router-view>
     </transition>
+    <footer>
+      Made By Marcos Benedicto
+    </footer>
   </div>
 </template>
 
