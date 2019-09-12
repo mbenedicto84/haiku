@@ -39,7 +39,7 @@ export default {
     .get('https://cors-anywhere.herokuapp.com/https://www.poemist.com/api/v1/randompoems')
     .then(response => {
       this.data = response.data
-      this.loading = false
+      this.loading = true
     })
     .catch(error => {
       console.log(error)

@@ -39,8 +39,19 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 
 .navbar-dark .navbar-nav .nav-link {
   color: black!important;
+  margin: 20px;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: black!important;
+  margin: 20px;
+  text-decoration: line-through;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+
+}
 .hometext{
 margin: auto;
 text-align: center;
