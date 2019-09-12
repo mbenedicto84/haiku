@@ -4,9 +4,9 @@
 
 <div class="inspiration">
 
-  <h1>{{data[0].title}}</h1>
-  <p>{{data[0].content}}</p>
-  <p>{{data[0].poet.name}}</p>
+  <h1>{{data.length <= null ? null: data[0].title}}</h1>
+  <p>{{data.length <= null ? null: data[0].content}}</p>
+  <p>{{data.length <= null ? null: data[0].poet.name}}</p>
   <div v-if="show">
     <button @click="rerender">New Poem</button>
  </div>

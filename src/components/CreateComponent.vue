@@ -1,6 +1,6 @@
 <template>
   <div class="createhaiku">
-    <h1>Create A Post</h1>
+    <h1>Create a Haiku</h1>
 
     <form @submit.prevent="addPost">
       <div class="row">

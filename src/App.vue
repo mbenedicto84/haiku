@@ -8,6 +8,7 @@
         <li class="nav-item">
           <router-link to="/create" class="nav-link">Create Haiku</router-link>
         </li>
+        <h1 class="tracking-in-expand" style="color:#CC5500; padding:20px; font-size:50px;">Haiku</h1>
         <li class="nav-item">
           <router-link to="/posts" class="nav-link">Haiku's</router-link>
         </li>
