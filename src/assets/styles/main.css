@@ -56,7 +56,7 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 margin: auto;
 text-align: center;
 color: black;
-max-width: 80%;
+max-width: 50%;
 height: 300px;
 padding: 30px;
 background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
@@ -83,6 +83,7 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 .poems {
   text-align: center;
   margin: auto;
+  margin-bottom: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
