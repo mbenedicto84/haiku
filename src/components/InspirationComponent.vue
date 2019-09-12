@@ -1,47 +1,52 @@
+
 <template>
   <div>
 
-        <div class="poems">
-      <h1>Posts</h1>
-            <router-link :to="{ name: 'create' }" class="btn btn-primary">Create Post</router-link>
+<div class="inspiration">
 
-        </div>
-
-        <div class="poems">
-
-
-                <div v-for="post in posts" :key="post._id">
-                  <div>Title: {{ post.title }}</div>
-                  <div>Content: {{ post.body }}</div>
-                  <router-link :to="{name: 'edit', params: { id: post._id }}" class="btn btn-primary">Edit</router-link>
-                  <button class="btn btn-danger" @click.prevent="deletePost(post._id)">Delete</button>
-                </div>
-
-        </div>
+  <h1>{{data[0].title}}</h1>
+  <p>{{data[0].content}}</p>
+  <p>{{data[0].poet.name}}</p>
+  <div v-if="show">
+    <button @click="rerender">New Poem</button>
+ </div>
   </div>
+  </div>
+
 </template>
 
 <script>
-  export default {
-      data() {
-        return {
-          posts: []
-        }
-      },
-      created() {
-      let uri = 'http://localhost:4000/posts';
-      this.axios.get(uri).then(response => {
-        this.posts = response.data;
-      });
-    },
-    methods: {
-      deletePost(id)
-      {
-        let uri = `http://localhost:4000/posts/delete/${id}`;
-        this.axios.delete(uri).then(response => {
-          this.posts.splice(this.posts.indexOf(id), 1);
-        });
-      }
+
+
+import axios from 'axios'
+export default {
+  data () {
+    return {
+      data: [],
+      loading: true,
+      show:true
+
+
     }
+  },
+  methods:{
+            rerender(){
+            window.location.reload()
+                    }
+
+        },
+  mounted () {
+  axios
+    .get('https://www.poemist.com/api/v1/randompoems')
+    .then(response => {
+      console.log(response)
+      this.data = response.data
+      this.loading = false
+    })
+    .catch(error => {
+      console.log(error)
+    })
   }
+}
+
 </script>

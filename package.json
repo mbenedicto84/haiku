@@ -46,5 +46,17 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "<<<<<<< HEAD # haiku",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbenedicto84/haiku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbenedicto84/haiku/issues"
+  },
+  "homepage": "https://github.com/mbenedicto84/haiku#readme"
 }
