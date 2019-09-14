@@ -1,6 +1,6 @@
 <template>
   <div class="createhaiku">
-    <h1>Create a Haiku</h1>
+    <h1>Add A Anime</h1>
 
     <form @submit.prevent="addPost">
       <div class="row">
@@ -19,7 +19,7 @@
             </div>
 
         </div><br />
-      
+
             <div class="row">
 
                 <div class="form-group">
