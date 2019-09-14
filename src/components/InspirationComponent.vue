@@ -1,4 +1,3 @@
-
 <template>
   <div>
 
@@ -7,11 +6,12 @@
   <div v-if="show">
     <button @click="rerender">Find Anime</button>
  </div>
- <iframe type="text/html" width="640" height="360"
-   :src="'https://www.youtube.com/embed/'+this.video+'?autoplay=0&origin=http://example.com'"
- frameborder="0"></iframe>
+
   <h1 class="title">{{info.length <= null ? null: info.data[0].attributes.titles.en}}</h1>
   <img :src="getPic()" class="art" />
+  <iframe type="text/html" width="640" height="360"
+    :src="'https://www.youtube.com/embed/'+this.video+'?autoplay=0&origin=http://example.com'"
+  frameborder="0" style="margin:20px"></iframe>
   <p>{{info.length <= null ? null: info.data[0].attributes.synopsis}}</p>
   <p>Format: {{info.length <= null ? null: info.data[0].attributes.showType}}</p>
   <p>Start Date: {{info.length <= null ? null: info.data[0].attributes.startDate}}</p>

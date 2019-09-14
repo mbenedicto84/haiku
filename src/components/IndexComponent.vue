@@ -1,16 +1,13 @@
 <template>
   <div>
 
-        <div class="poems">
-      <h1>Anime List</h1>
-            <router-link :to="{ name: 'create' }" class="btn btn-primary">Create Post</router-link>
-
+        <div class="center">
+          <h1>Anime List</h1>
+          <router-link :to="{ name: 'create' }" class="btn btn-primary">Create Post</router-link>
         </div>
-
         <div class="poems">
 
-
-                <div v-for="post in posts" :key="post._id">
+                <div v-for="post in posts" :key="post._id" class="grid">
                   <h1> Title: <br/>{{ post.title }}</h1>
                   <p> Comment: <br/>{{ post.body }}</p>
                   <h3> by: <br/> {{ post.user }}</h3>

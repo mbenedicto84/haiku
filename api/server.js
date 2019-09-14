@@ -6,6 +6,8 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const config = require('./DB.js');
 const postRoute = require('./post.route');
+var path = require('path');
+var serveStatic = require('serve-static');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB, { useNewUrlParser: true }).then(
@@ -16,7 +18,8 @@ mongoose.connect(config.DB, { useNewUrlParser: true }).then(
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-
+app = express();
+app.use(serveStatic(__dirname + "/dist"));
 app.use('/posts', postRoute);
 
 app.listen(PORT, function(){
