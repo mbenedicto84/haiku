@@ -47,6 +47,8 @@ postRoutes.route('/update/:id').post(function (req, res) {
     else {
         post.title = req.body.title;
         post.body = req.body.body;
+        post.recommend = req.body.recommend;
+        post.user = req.body.user;
         post.save().then(() => {
           res.json('Update complete');
       })

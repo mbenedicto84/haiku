@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Post Title:</label>
+            <label>Anime Title</label>
             <input type="text" class="form-control" v-model="post.title">
           </div>
         </div>
@@ -14,11 +14,19 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label>Post Body:</label>
+              <label>Comments</label>
               <textarea class="form-control" v-model="post.body" rows="5"></textarea>
             </div>
           </div>
-        </div><br />
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>User</label>
+              <input type="text" class="form-control" v-model="post.user">
+            </div>
+          </div>
+          </div>
         <div class="form-group">
           <button class="btn btn-primary">Update</button>
         </div>
@@ -31,7 +39,7 @@
 
       data() {
         return {
-          post: {}
+          post: []
         }
       },
       created() {

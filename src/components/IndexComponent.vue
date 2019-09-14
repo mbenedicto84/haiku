@@ -2,7 +2,7 @@
   <div>
 
         <div class="poems">
-      <h1>Posts</h1>
+      <h1>Anime List</h1>
             <router-link :to="{ name: 'create' }" class="btn btn-primary">Create Post</router-link>
 
         </div>
@@ -11,9 +11,9 @@
 
 
                 <div v-for="post in posts" :key="post._id">
-                  <div>Title: {{ post.title }}</div>
-                  <div>Content: {{ post.body }}</div>
-                  <div>User: {{ post.user }}</div>
+                  <h1> Title: <br/>{{ post.title }}</h1>
+                  <p> Comment: <br/>{{ post.body }}</p>
+                  <h3> by: <br/> {{ post.user }}</h3>
                   <router-link :to="{name: 'edit', params: { id: post._id }}" class="btn btn-primary">Edit</router-link>
                   <button class="btn btn-danger" @click.prevent="deletePost(post._id)">Delete</button>
                 </div>

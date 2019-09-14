@@ -6,15 +6,16 @@
           <router-link to="/" class="nav-link">Home</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/create" class="nav-link">Create Haiku</router-link>
+          <router-link to="/create" class="nav-link">Add Anime Show</router-link>
         </li>
-        <h1 class="tracking-in-expand" style="color:#CC5500; padding:20px; font-size:50px;">Haiku</h1>
+        <h1 class="tracking-in-expand" style="color:#CC5500; padding:20px; font-size:50px;">Ichiraku</h1>
         <li class="nav-item">
-          <router-link to="/posts" class="nav-link">Haiku's</router-link>
+          <router-link to="/posts" class="nav-link">Anime</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/inspiration" class="nav-link">Inspiration</router-link>
+          <router-link to="/inspiration" class="nav-link">Search Anime</router-link>
         </li>
+
       </ul>
     </nav><br />
     <transition name="fade">
@@ -33,7 +34,7 @@
       transition: opacity .5s
     }
     .fade-enter, .fade-leave-active {
-      opacity: 0
+      opacity: 2
     }
 </style>
 

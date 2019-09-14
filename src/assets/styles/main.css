@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
 body{
-background-image: url('https://wallpaperplay.com/walls/full/8/0/4/131018.jpg');
+background-image: url('https://www.elsetge.cat/myimg/f/139-1395322_ramen-hakata-tonkotsu-ramens.png');
 background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,12 +23,12 @@ width: 100%;
 padding-top:10px;
 padding-bottom:10px;
 color: black;
-background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+background-color: white;
 }
 
 
 .bg-dark{
-background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+background-color: white!important;
 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -50,6 +50,7 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 .navbar{
   display: flex;
   justify-content: center;
+  background: white;
 
 }
 .hometext{
@@ -57,9 +58,9 @@ margin: auto;
 text-align: center;
 color: black;
 max-width: 50%;
-height: 300px;
-padding: 30px;
-background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+height: auto;
+padding: 50px;
+background-color: white;
 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -72,7 +73,7 @@ color: black;
 max-width: 80%;
 height: auto;
 padding: 30px;
-background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+background-color: white;
 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -91,7 +92,7 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 max-width: 80%;
   height: auto;
   padding: 30px;
-  background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+ background-color: white;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 
 }
@@ -107,7 +108,23 @@ max-width: 80%;
   height: auto;
   margin-bottom: 75px;
   padding: 30px;
-  background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?size=626&ext=jpg');
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.edit{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+max-width: 80%;
+  height: auto;
+  margin-bottom: 75px;
+  padding: 30px;
+background-color: white;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 
 }
@@ -157,6 +174,16 @@ button:hover{
     width: 150px;
     margin: 20px;
     border-radius: 5px;
+}
+.art{
+  width: 100%;
+  margin: 30px;
+}
+.title{
+  padding: 20px;
+}
+.poster{
+  width: 100%;
 }
 
 .tracking-in-expand {
