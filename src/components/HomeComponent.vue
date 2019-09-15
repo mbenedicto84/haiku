@@ -4,7 +4,7 @@
   <div class="container">
   <div class="hometext">
     Ichiraku is a App that allows anime lovers to gather and search for new anime. We can collect and list anime's we have watched and recommend them to other users. It is a great source for finding any type of anime with an extensive guide from start dates to ratings. Please enjoy!
-    <image-slider>
+    <div>
    <img
    :src="images[Math.abs(currentNumber) % images.length]"
    v-on:mouseover="stopRotation"
@@ -13,7 +13,7 @@
    <p>
    <a @click="prev">Previous</a> || <a @click="next">Next</a>
    </p>
-  </image-slider>
+ </div>
 
 
   </div>
