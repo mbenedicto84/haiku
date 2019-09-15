@@ -11,7 +11,7 @@
    v-on:mouseout="startRotation"
     class="slider"/>
    <p>
-   <a @click="prev">Previous</a> || <a @click="next">Next</a>
+   <a @click="prev"><span class="prev">Previous</span></a> || <a @click="next" ><span class="next">Next</span></a>
    </p>
  </div>
 
