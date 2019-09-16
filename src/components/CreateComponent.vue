@@ -1,5 +1,5 @@
 <template>
-  <div class="createhaiku">
+  <div class="createhaiku fade-in">
     <h1>Add A Anime</h1>
 
     <form @submit.prevent="addPost">

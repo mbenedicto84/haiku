@@ -1,6 +1,6 @@
 
 <template>
-  <div class="edit">
+  <div class="edit fade-in">
     <h1>Edit Post</h1>
     <form @submit.prevent="updatePost">
       <div class="row">

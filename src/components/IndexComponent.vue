@@ -1,11 +1,11 @@
 <template>
   <div>
 
-        <div class="center">
+        <div class="center fade-in">
           <h1>Anime List</h1>
           <router-link :to="{ name: 'create' }" class="btn btn-primary">Create Post</router-link>
         </div>
-        <div class="poems">
+        <div class="poems fade-in">
 
                 <div v-for="post in posts" :key="post._id" class="grid">
                   <h1> Title: <br/>{{ post.title }}</h1>
