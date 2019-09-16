@@ -1,244 +1,250 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
-
-body{
-background-image: url('https://www.elsetge.cat/myimg/f/139-1395322_ramen-hakata-tonkotsu-ramens.png');
-background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-font-family: 'Indie Flower', cursive;
-font-size: 24px;
-color: white;;
-margin: 0;
+body {
+	background-image: url('https://www.elsetge.cat/myimg/f/139-1395322_ramen-hakata-tonkotsu-ramens.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Indie Flower', cursive;
+	font-size: 24px;
+	color: white;
+	;
+	margin: 0;
 }
-ul,li {
-  list-style: none;
+ul, li {
+	list-style: none;
 }
-footer{
-  font-size: .8em!important;
-  text-align: center!important;
-position: fixed!important;
-bottom: 0!important;
-width: 100%!important;
-padding-top:10px!important;
-padding-bottom:10px!important;
-color: black!important;
-background-color: white!important;
+footer {
+	font-size: .8em!important;
+	text-align: center!important;
+	position: fixed!important;
+	bottom: 0!important;
+	width: 100%!important;
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+	color: black!important;
+	background-color: white!important;
 }
-
-
-.bg-dark{
-background-color: white!important;
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+.bg-dark {
+	background-color: white!important;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
-
-.header{
-  text-align: center;
-  font-size: 60px;
+.header {
+	text-align: center;
+	font-size: 60px;
 }
-
 .navbar-dark .navbar-nav .nav-link {
-  color: black!important;
-  margin: 20px;
+	color: black!important;
+	margin: 20px;
 }
-
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: black!important;
-  margin: 20px;
-  text-decoration: line-through;
+	color: black!important;
+	margin: 20px;
+	text-decoration: line-through;
 }
-.navbar{
-  display: flex;
-  justify-content: center;
-  background: white;
-
+.navbar {
+	display: flex;
+	justify-content: center;
+	background: white;
 }
-.hometext{
-margin: auto;
-margin-bottom: 100px;
-text-align: center;
-color: black;
-max-width: 50%;
-height: auto;
-padding: 50px;
-background-color: white;
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+.hometext {
+	margin: auto;
+	margin-bottom: 100px;
+	text-align: center;
+	color: black;
+	max-width: 50%;
+	height: auto;
+	padding: 50px;
+	background-color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
-.video{
-  text-align: center;
+.video {
+	text-align: center;
 }
-.createhaiku{
-margin: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-color: black;
-max-width: 80%;
-height: auto;
-padding: 30px;
-background-color: white;
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+.createhaiku {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: black;
+	max-width: 80%;
+	height: auto;
+	padding: 30px;
+	background-color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
-
-.form-group{
-  width: 500px;
-  text-align: center;
+.form-group {
+	width: 500px;
+	text-align: center;
 }
 .poems {
-display: flex;
-  margin: auto;
-  flex-wrap: wrap!important;
-  margin-bottom: 75px;
-  justify-content: center;
-  color: black;
-max-width: 1400px;
-  height: auto;
-  padding: 30px;
- background-color: white;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
-
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap!important;
+	margin-bottom: 75px;
+	justify-content: center;
+	color: black;
+	max-width: 1400px;
+	height: auto;
+	padding: 30px;
+	background-color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
-.center{
-  background-color: white;
-   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
-text-align: center;
-color: black;
-padding: 10px;
-color: black;
-max-width: 1400px;
-margin:auto;
+.center {
+	background-color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	color: black;
+	padding: 10px;
+	color: black;
+	max-width: 1400px;
+	margin: auto;
 }
-.inspiration{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  color: black;
-max-width: 80%;
-  height: auto;
-  margin-bottom: 75px;
-  padding: 30px;
-  background-color: white;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
-
+.inspiration {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	color: black;
+	max-width: 80%;
+	height: auto;
+	margin-bottom: 75px;
+	padding: 30px;
+	background-color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
-
-.edit{
-  text-align: center;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: black;
-max-width: 80%;
-  height: auto;
-  margin-bottom: 75px;
-  padding: 30px;
-background-color: white;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
-
+.edit {
+	text-align: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: black;
+	max-width: 80%;
+	height: auto;
+	margin-bottom: 75px;
+	padding: 30px;
+	background-color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
-
 .btn-primary {
-  color: #fff;
-    background-color: #CC5500;
-    border-color: #CC5500;
-    width: 150px;
-    margin: 20px;
-    margin: auto;
+	color: #fff;
+	background-color: #CC5500;
+	border-color: #CC5500;
+	width: 150px;
+	margin: 20px;
+	margin: auto;
 }
 .btn-primary:hover {
-  color: black;
-    background-color: white;
-    border-color: black;
-    width: 150px;
-    margin: 20px;
-    margin: auto;
+	color: black;
+	background-color: white;
+	border-color: black;
+	width: 150px;
+	margin: 20px;
+	margin: auto;
 }
-.btn-danger{
-  color: #fff;
-    background-color: Black;
-    border-color: black;
-    width: 150px;
-
-    margin: 20px auto;
-
+.btn-danger {
+	color: #fff;
+	background-color: Black;
+	border-color: black;
+	width: 150px;
+	margin: 20px auto;
 }
-.btn-danger:hover{
-  color: black;
-    background-color: white;
-    border-color: black;
-    width: 150px;
-    margin: 20px auto;
+.btn-danger:hover {
+	color: black;
+	background-color: white;
+	border-color: black;
+	width: 150px;
+	margin: 20px auto;
 }
-
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-button{
-  color: #fff;
-    background-color: #CC5500;
-    border-color: #CC5500;
-    width: 150px;
-    margin: 20px;
-    border-radius: 5px
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: visible;
+	max-width: 100%;
+	right: 15px;
+	margin-bottom: 30px;
 }
-
-button:hover{
-  color: black;
-    background-color: white;
-    border-color: 1px solid black;
-    width: 150px;
-    margin: 20px;
-    border-radius: 5px;
+.embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
 }
-.prev:hover{
-  text-decoration: line-through;
+.ytp-chrome-top-buttons {
+	white-space: nowrap;
+	padding: 10px!important;
 }
-.next:hover{
-  text-decoration: line-through;
+.ytp-button:not([aria-disabled=true]):not([disabled]):not([aria-hidden=true]) {
+	cursor: pointer;
+	padding: 10px!important;
 }
-.art{
-  width: 100%;
-  margin: 30px;
-  margin: auto;
+button {
+	color: #fff;
+	background-color: #CC5500;
+	border-color: #CC5500;
+	width: 150px;
+	margin: 20px;
+	border-radius: 5px
 }
-.title{
-  padding: 20px;
+button:hover {
+	color: black;
+	background-color: white;
+	border-color: 1px solid black;
+	width: 150px;
+	margin: 20px;
+	border-radius: 5px;
 }
-.poster{
-  width: 100%;
+.prev:hover {
+	text-decoration: line-through;
 }
-.grid{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  margin: 20px;
-  border: 1px solid black;
-  padding: 30px;
-  width: 300px
+.next:hover {
+	text-decoration: line-through;
 }
-
-.slider{
-  width: 100%;
-  padding: 20px;
+.art {
+	width: 100%;
+	margin: 30px;
+	margin: auto;
+}
+.title {
+	padding: 20px;
+}
+.poster {
+	width: 100%;
+}
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px;
+	border: 1px solid black;
+	padding: 30px;
+	width: 300px
+}
+.slider {
+	width: 100%;
+	padding: 20px;
 }
 .fade-in {
 	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-@media (min-width: 1200px){
-.container {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+@media (min-width: 1200px) {
+	.container {
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
 }
-}
-
 /* ----------------------------------------------
  * Generated by Animista on 2019-9-12 16:56:52
  * Licensed under FreeBSD License.
@@ -251,29 +257,30 @@ button:hover{
  * animation tracking-in-expand
  * ----------------------------------------
  */
+
 @-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 @keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 /* ----------------------------------------------
  * Generated by Animista on 2019-9-14 23:16:32
@@ -287,19 +294,20 @@ button:hover{
  * animation fade-in
  * ----------------------------------------
  */
+
 @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
