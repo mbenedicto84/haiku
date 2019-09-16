@@ -8,6 +8,11 @@ const config = require('./src/DB.js');
 const postRoute = require('./src/routes.js');
 var path = require('path');
 var serveStatic = require('serve-static');
+
+// Connect to Mongo
+mongoose.connect(MONGODB_URI ,  { useNewUrlParser: true});
+
+
 // Database
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
 mongoose.connection.once('open', () => {
