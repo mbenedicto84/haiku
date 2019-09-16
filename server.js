@@ -8,12 +8,12 @@ const config = require('./src/DB.js');
 const postRoute = require('./src/routes.js');
 var path = require('path');
 var serveStatic = require('serve-static');
+// Database
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
+mongoose.connection.once('open', () => {
+  console.log('connected to mongo', MONGODB_URI)
+})
 
-mongoose.Promise = global.Promise;
-mongoose.connect(config.DB, { useNewUrlParser: true }).then(
-  () => { console.log('Database is connected') },
-  err => { console.log('Can not connect to the database'+ err)}
-);
 
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
