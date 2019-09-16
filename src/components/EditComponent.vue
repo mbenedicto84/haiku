@@ -22,6 +22,14 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label>Recommend</label>
+              <input type="text" class="form-control" v-model="post.recommend">
+            </div>
+          </div>
+          </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
               <label>User</label>
               <input type="text" class="form-control" v-model="post.user">
             </div>

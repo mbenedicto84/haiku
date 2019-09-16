@@ -19,6 +19,14 @@
             </div>
 
         </div><br />
+        <div class="row">
+
+            <div class="form-group">
+
+              <input placeholder="Recommend" type="text" class="form-control" v-model="post.recommend">
+            </div>
+
+          </div><br/>
             <div class="row">
 
                 <div class="form-group">
