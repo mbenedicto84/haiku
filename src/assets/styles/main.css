@@ -87,8 +87,8 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 .poems {
 display: flex;
   margin: auto;
+  flex-wrap: wrap!important;
   margin-bottom: 75px;
-  display: flex;
   justify-content: center;
   color: black;
 max-width: 1400px;
