@@ -10,9 +10,6 @@ let Post = new Schema({
   body: {
     type: String
   },
-  recommend: {
-    type: Boolean
-  },
   user: {
     type: String
   }
