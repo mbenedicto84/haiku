@@ -6,7 +6,6 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const config = require('./src/DB');
 const postRoute = require('./src/routes.js');
-require('dotenv').config()
 var path = require('path');
 var serveStatic = require('serve-static');
 
