@@ -1,33 +1,11 @@
-<<<<<<< HEAD
-# haiku
 
-## Project setup
-```
-yarn install
-```
+# Ichiraku
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+1. Created in MEVN stack built with a Vue front end framework and Mongodb back-end database.
+2. Api integration with kitsu api and youtube technologies to work with search function.
+3. Basic crud functionality to work with anime watch list.
+4. Would like to add more to models and recommended.
+5. Would like to add more to posting option.
+6. Would like to have an add feature in the search option.
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# haiku
->>>>>>> 7aa80f10fa2fce3ab1193e3aa2f78c40165a920e
+# Marcos Benedicto
