@@ -11,14 +11,14 @@
   <img :src="getPic()" class="art" />
   <div class="video video-responsive">
 
-    <div class='embed-container'><iframe 
+    <div class='embed-container'><iframe
       :src="'https://www.youtube.com/embed/'+this.video+'?autoplay=0&origin=http://example.com'"
     frameborder="0" style="margin:20px"></iframe></div>
 
   </div>
 
   <p>{{info.length <= null ? null: info.data[0].attributes.synopsis}}</p>
-  <p>Format: {{info.length <= null ? null: info.data[0].attributes.showType}}</p>
+  <p>Format: {{info.length = null ? null: info.data[0].attributes.showType}}</p>
   <p>Start Date: {{info.length <= null ? null: info.data[0].attributes.startDate}}</p>
   <p>End Date: {{info.length <= null ? null: info.data[0].attributes.endDate}}</p>
   <p>Age Rating: {{info.length <= null ? null: info.data[0].attributes.ageRating}}</p>
