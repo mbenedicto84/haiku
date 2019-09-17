@@ -37,6 +37,8 @@ footer {
 .navbar-dark .navbar-nav .nav-link {
 	color: black!important;
 	margin: 20px;
+	font-size: 1.3vw;
+
 }
 .navbar-dark .navbar-nav .nav-link:hover {
 	color: black!important;
