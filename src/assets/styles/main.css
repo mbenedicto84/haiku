@@ -225,8 +225,11 @@ button:hover {
 	margin: 20px;
 	border: 1px solid black;
 	padding: 30px;
-	width: 300px
+	width: 300px;
+
 }
+
+
 .slider {
 	width: 100%;
 	padding: 20px;
