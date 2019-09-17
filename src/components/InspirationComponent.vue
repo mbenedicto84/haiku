@@ -18,7 +18,7 @@
   </div>
 
   <p>{{info.length <= null ? null: info.data[0].attributes.synopsis}}</p>
-  <p>Format: {{info.length = null ? null: info.data[0].attributes.showType}}</p>
+  <p>Format: {{info.length <= null ? null: info.data[0].attributes.showType}}</p>
   <p>Start Date: {{info.length <= null ? null: info.data[0].attributes.startDate}}</p>
   <p>End Date: {{info.length <= null ? null: info.data[0].attributes.endDate}}</p>
   <p>Age Rating: {{info.length <= null ? null: info.data[0].attributes.ageRating}}</p>
@@ -30,8 +30,6 @@
 </template>
 
 <script>
-
-
 import axios from 'axios'
 export default {
   data () {
@@ -43,7 +41,6 @@ export default {
       message:[],
       loading: true,
       show:true
-
     }
   },
   methods:{
@@ -65,12 +62,6 @@ export default {
             getPic(){
                return this.info.length <= null ? null: this.info.data[0].attributes.coverImage.large
              },
-
-
           },
-
-
-
         }
-
 </script>
