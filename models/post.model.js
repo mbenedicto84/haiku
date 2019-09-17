@@ -10,6 +10,9 @@ let Post = new Schema({
   body: {
     type: String
   },
+  date: {
+    type: Date
+  },
   recommend: {
     type: String
   },

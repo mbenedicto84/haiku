@@ -10,8 +10,8 @@
                 <div v-for="post in posts" :key="post._id" class="grid">
                   <h1> Title: <br/>{{ post.title }}</h1>
                   <p> Comment: <br/>{{ post.body }}</p>
-                    <p> Recommend: <br/>{{ post.recommend }}</p>
                   <h3> by: <br/> {{ post.user }}</h3>
+
                   <router-link :to="{name: 'edit', params: { id: post._id }}" class="btn btn-primary">Edit</router-link>
                   <button class="btn btn-danger" @click.prevent="deletePost(post._id)">Delete</button>
                 </div>
@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import moment from 'moment'
+
   export default {
       data() {
         return {
@@ -40,7 +42,7 @@
         this.axios.delete(uri).then(response => {
           this.posts.splice(this.posts.indexOf(id), 1);
         });
-      }
+      },
     }
-  }
+}
 </script>

@@ -47,6 +47,14 @@ const routes = [
   }
 ];
 
+
+
 const router = new VueRouter({ mode: 'history', routes: routes});
 
 new Vue(Vue.util.extend({ router }, App)).$mount('#app');
+import moment from 'moment'
+Vue.filter('formatDate', function(value) {
+  if (value) {
+    return moment(String(value)).format('MM/DD/YYYY hh:mm')
+  }
+});

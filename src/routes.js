@@ -7,6 +7,7 @@ let Post = require('../models/post.model');
 // Defined store route
 postRoutes.route('/add').post(function (req, res) {
   let post = new Post(req.body);
+  console.log(req.body);
   post.save()
     .then(() => {
       res.status(200).json({'business': 'business in added successfully'});
