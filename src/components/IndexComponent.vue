@@ -10,9 +10,9 @@
                 <div v-for="post in posts" :key="post._id" class="grid">
                   <h1> Title: <br/>{{ post.title }}</h1>
                   <p> Comment: <br/>{{ post.body }}</p>
-                      <p> Date: <br/>{{ post.date}}</p>
+                      <p> Date: <br/>{{ post.date | moment()  }}</p>
                   <p> Recommend: <br/>{{ post.recommend }}</p>
-                  <h3> by: <br/> {{ post.user }}</h3>
+                  <h3> by: <br/> {{ post.user}}</h3>
                   <router-link :to="{name: 'edit', params: { id: post._id }}" class="btn btn-primary">Edit</router-link>
                   <button class="btn btn-danger" @click.prevent="deletePost(post._id)">Delete</button>
                 </div>
@@ -45,10 +45,14 @@ import moment from 'moment'
           this.posts.splice(this.posts.indexOf(id), 1);
         });
       },
-      moment: function () {
-    return moment();
-  }
-    }
+
+},
+filters: {
+  moment: function () {
+return moment().format('YYYY-MM-DD');
+
+}
+}
 
 }
 </script>
