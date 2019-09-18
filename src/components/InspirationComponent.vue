@@ -1,31 +1,34 @@
 <template>
-  <div >
+  <div class="searchbg">
+    <div>
 
-<div class="inspiration fade-in">
-  <input v-model="title" placeholder="Find Anime">
-  <div v-if="show">
-    <button @click="rerender">Find Anime</button>
- </div>
+  <div class="inspiration fade-in">
+    <input v-model="title" placeholder="Find Anime">
+    <div v-if="show">
+      <button @click="rerender">Find Anime</button>
+   </div>
 
-  <h1 class="title">{{info.length <= null ? null: info.data[0].attributes.titles.en}}</h1>
-  <img :src="getPic()" class="art" />
-  <div class="video video-responsive">
+    <h1 class="title">{{info.length <= null ? null: info.data[0].attributes.titles.en}}</h1>
+    <img :src="getPic()" class="art" />
+    <div class="video video-responsive">
 
-    <div class='embed-container'><iframe
-      :src="'https://www.youtube.com/embed/'+this.video+'?autoplay=0&origin=http://example.com'"
-    frameborder="0" style="margin:20px"></iframe></div>
+      <div class='embed-container'><iframe
+        :src="'https://www.youtube.com/embed/'+this.video+'?autoplay=0&origin=http://example.com'"
+      frameborder="0" style="margin:20px"></iframe></div>
 
+    </div>
+
+    <p>{{info.length <= null ? null: info.data[0].attributes.synopsis}}</p>
+    <p>Format: {{info.length <= null ? null: info.data[0].attributes.showType}}</p>
+    <p>Start Date: {{info.length <= null ? null: info.data[0].attributes.startDate}}</p>
+    <p>End Date: {{info.length <= null ? null: info.data[0].attributes.endDate}}</p>
+    <p>Age Rating: {{info.length <= null ? null: info.data[0].attributes.ageRating}}</p>
+    <p>Rating Guide: {{info.length <= null ? null: info.data[0].attributes.ageRatingGuide}}</p>
+    <p>Viewer Rating: {{info.length <= null ? null: info.data[0].attributes.averageRating}}</p>
+    </div>
+    </div>
   </div>
 
-  <p>{{info.length <= null ? null: info.data[0].attributes.synopsis}}</p>
-  <p>Format: {{info.length <= null ? null: info.data[0].attributes.showType}}</p>
-  <p>Start Date: {{info.length <= null ? null: info.data[0].attributes.startDate}}</p>
-  <p>End Date: {{info.length <= null ? null: info.data[0].attributes.endDate}}</p>
-  <p>Age Rating: {{info.length <= null ? null: info.data[0].attributes.ageRating}}</p>
-  <p>Rating Guide: {{info.length <= null ? null: info.data[0].attributes.ageRatingGuide}}</p>
-  <p>Viewer Rating: {{info.length <= null ? null: info.data[0].attributes.averageRating}}</p>
-  </div>
-  </div>
 
 </template>
 

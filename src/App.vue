@@ -17,7 +17,7 @@
         </li>
 
       </ul>
-    </nav><br />
+    </nav>
     <transition name="fade">
       <router-view></router-view>
     </transition>

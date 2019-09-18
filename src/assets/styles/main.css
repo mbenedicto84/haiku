@@ -1,16 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 body {
+	font-family: 'Indie Flower', cursive;
+	font-size: 24px;
+	color: white;
+	margin: 0;
+}
+.createbg{
+	background-image: url('https://cdn.guidingtech.com/media/assets/best-bleach-anime-wallpaper.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 20px;
+}
+.homebg{
+	background-image: url('https://wallpapercave.com/wp/TX5v6Nl.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 20px;
+}
+.editbg{
+	background-image: url('http://wallpapersdsc.net/wp-content/uploads/2017/10/Blood-Anime-Wallpapers.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 20px;
+}
+
+.list-bg{
 	background-image: url('https://www.xtrafondos.com/wallpapers/my-hero-academia-3383.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	font-family: 'Indie Flower', cursive;
-	font-size: 24px;
-	color: white;
-	;
-	margin: 0;
+	padding: 50px;
 }
+.searchbg{
+	background-image: url('http://wallpaperlepi.com/wp-content/uploads/2015/09/Sasuke-Anime-Wallpaper.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 50px;
+}
+
+
 ul, li {
 	list-style: none;
 }
@@ -25,6 +62,7 @@ footer {
 	padding-bottom: 10px!important;
 	color: black!important;
 	background-color: white!important;
+	height: 75px;
 }
 .bg-dark {
 	background-color: white!important;

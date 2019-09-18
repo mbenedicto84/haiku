@@ -1,23 +1,26 @@
 
 
 <template>
-  <div class="container fade-in">
-  <div class="hometext">
-    <p>Ichiraku is a App that allows anime lovers to gather and search for new anime. We can collect and list anime's we have watched and recommend them to other users. It is a great source for finding any type of anime with an extensive guide from start dates to ratings. Please enjoy!</p>
-    <div>
-   <img
-   :src="images[Math.abs(currentNumber) % images.length]"
-   v-on:mouseover="stopRotation"
-   v-on:mouseout="startRotation"
-    class="slider"/>
-   <p>
-   <a @click="prev"><span class="prev">Previous</span></a> || <a @click="next" ><span class="next">Next</span></a>
-   </p>
- </div>
-
-
-  </div>
+  <div class="homebg">
+    <div class="container fade-in">
+    <div class="hometext">
+      <p>Ichiraku is a App that allows anime lovers to gather and search for new anime. We can collect and list anime's we have watched and recommend them to other users. It is a great source for finding any type of anime with an extensive guide from start dates to ratings. Please enjoy!</p>
+      <div>
+     <img
+     :src="images[Math.abs(currentNumber) % images.length]"
+     v-on:mouseover="stopRotation"
+     v-on:mouseout="startRotation"
+      class="slider"/>
+     <p>
+     <a @click="prev"><span class="prev">Previous</span></a> || <a @click="next" ><span class="next">Next</span></a>
+     </p>
     </div>
+
+
+    </div>
+      </div>
+  </div>
+
 </template>
 <script>
 export default {
