@@ -14,7 +14,7 @@ var serveStatic = require('serve-static');
 const MONGODB_URI = process.env.MONGODB_URI;
 
 
-mongoose.connect('mongodb+srv://mbenedicto:Mabny02@sei-iapho.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true
 })
 .then(
