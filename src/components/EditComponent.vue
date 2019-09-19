@@ -61,17 +61,27 @@
         }
       },
       created() {
-        let uri = `http://localhost:4000/posts/edit/${this.$route.params.id}`;
+        let uri = `https://ichiraku.herokuapp.com/posts/edit/${this.$route.params.id}`;
         this.axios.get(uri).then((response) => {
             this.post = response.data;
-        });
+        }).then(response => {
+	console.log(response)
+})
+.catch(error => {
+    console.log(error.response)
+});
       },
       methods: {
         updatePost() {
           let uri = `https://ichiraku.herokuapp.com/posts/update/${this.$route.params.id}`;
           this.axios.post(uri, this.post).then(() => {
             this.$router.push({name: 'posts'});
-          });
+          }).then(response => {
+	console.log(response)
+})
+.catch(error => {
+    console.log(error.response)
+});
         }
       }
     }
