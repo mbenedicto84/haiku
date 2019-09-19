@@ -4,7 +4,7 @@
 
   <div class="inspiration fade-in">
     <input v-model="title" placeholder="Find Anime">
-    <div v-if="show">
+    <div v-if="show" class="find">
       <button @click="rerender">Find Anime</button>
    </div>
 

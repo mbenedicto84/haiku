@@ -124,7 +124,7 @@ footer {
 	margin-bottom: 75px;
 	justify-content: center;
 	color: black;
-	max-width: 1400px;
+	width: 100%;
 	height: auto;
 	padding: 30px;
 	background-color: white;
@@ -137,7 +137,7 @@ footer {
 	color: black;
 	padding: 10px;
 	color: black;
-	max-width: 1400px;
+	width: 100%;
 	margin: auto;
 }
 .inspiration {
@@ -161,7 +161,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	color: black;
-	max-width: 80%;
+	max-width: 1000px;
 	height: auto;
 	margin-bottom: 75px;
 	padding: 30px;
@@ -228,7 +228,7 @@ button {
 	background-color: #CC5500;
 	border-color: #CC5500;
 	width: 150px;
-	margin: 20px;
+	margin: auto;
 	border-radius: 5px
 }
 button:hover {
@@ -236,7 +236,6 @@ button:hover {
 	background-color: white;
 	border-color: 1px solid black;
 	width: 150px;
-	margin: 20px;
 	border-radius: 5px;
 }
 .prev:hover {
@@ -249,6 +248,12 @@ button:hover {
 	width: 100%;
 	margin: 30px;
 	margin: auto;
+}
+.find{
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+
 }
 .title {
 	padding: 20px;
@@ -273,9 +278,15 @@ div.form-group{
 	text-align: center;
 }
 
+input{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 5px;
+}
 .form-control {
     display: block;
-		width: 250px;
+		width: 230px;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
