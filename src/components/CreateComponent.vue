@@ -1,49 +1,50 @@
 <template>
   <div class="createbg">
-    <div class="createhaiku fade-in">
-      <h1>Add A Anime</h1>
 
-      <form @submit.prevent="addPost">
-        <div class="row">
+      <div class="createhaiku fade-in">
+        <h1>Add A Anime</h1>
 
-            <div class="form-group">
+        <form @submit.prevent="addPost">
+          <div class="row">
 
-              <input placeholder="Anime Title" type="text" class="form-control" v-model="post.title">
+              <div class="form-group">
+
+                <input placeholder="Anime Title" type="text" class="form-control" v-model="post.title">
+              </div>
+
             </div>
+            <div class="row">
 
-          </div>
-          <div class="row">
+                <div class="form-group">
 
-              <div class="form-group">
+                  <textarea placeholder="Comments" class="form-control" v-model="post.body" rows="5"></textarea>
+                </div>
 
-                <textarea placeholder="Comments" class="form-control" v-model="post.body" rows="5"></textarea>
-              </div>
+            </div><br />
 
-          </div><br />
-      
-          <div class="row">
+            <div class="row">
 
-              <div class="form-group">
+                <div class="form-group">
 
-                <input placeholder="Recommend" type="text" class="form-control" v-model="post.recommend">
-              </div>
+                  <input placeholder="Recommend" type="text" class="form-control" v-model="post.recommend">
+                </div>
 
-            </div><br/>
-              <div class="row">
+              </div><br/>
+                <div class="row">
 
-                  <div class="form-group">
+                    <div class="form-group">
 
-                    <input placeholder="User" type="text" class="form-control" v-model="post.user">
-                  </div>
+                      <input placeholder="User" type="text" class="form-control" v-model="post.user">
+                    </div>
 
-                </div><br/>
-          <div class="form-group">
-            <button class="btn btn-primary">Add Show</button>
-          </div>
-      </form>
+                  </div><br/>
+            <div class="form-group">
+              <button class="btn btn-primary">Add Show</button>
+            </div>
+        </form>
+      </div>
+
     </div>
-
-  </div>
 
 </template>
 
