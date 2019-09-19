@@ -66,7 +66,11 @@
       let uri = 'https://ichiraku.herokuapp.com/posts/add';
       this.axios.post(uri, this.post).then(() => {
          this.$router.push({name: 'posts'});
-      });
+      }).then((responseJson) => {
+  // Do something with the response
+})
+.catch((error) => {
+  console.log(error);
   }
     }
   }
