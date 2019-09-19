@@ -18,7 +18,7 @@ mongoose.connect('mongodb+srv://mbenedicto:Mabny02@sei-iapho.mongodb.net/test?re
   useNewUrlParser: true
 })
 .then(
-  () => { console.log('Database is connected') },
+  () => { console.log('Atlas is connected') },
   err => { console.log('Can not connect to the database'+ err)}
 );
 
