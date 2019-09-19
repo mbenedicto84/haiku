@@ -36,7 +36,6 @@ import moment from 'moment'
       let uri = 'https://ichiraku.herokuapp.com/posts';
       this.axios.get(uri).then(response => {
         this.posts = response.data;
-        console.log(this.posts.date);
       });
     },
     methods: {
@@ -47,9 +46,6 @@ import moment from 'moment'
           this.posts.splice(this.posts.indexOf(id), 1);
         });
       },
-     //  moment () {
-     // return moment(this.post[0].date).slice(0, 5);
-     // }
 
 },
 
