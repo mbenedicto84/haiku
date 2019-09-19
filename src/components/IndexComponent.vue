@@ -10,7 +10,7 @@
           <div v-for="post in posts" :key="post._id" class="grid">
             <h1> Title: <br/>{{ post.title }}</h1>
             <p> Comment: <br/>{{ post.body }}</p>
-                <p> Date: <br/>{{ post.date  }}</p>
+                <p> Date: <br/>{{ moment()  }}</p>
             <p> Recommend: <br/>{{ post.recommend }}</p>
             <h3> by: <br/> {{ post.user}}</h3>
             <router-link :to="{name: 'edit', params: { id: post._id }}" class="btn btn-primary">Edit</router-link>
@@ -37,6 +37,7 @@ import moment from 'moment'
       let uri = 'https://ichiraku.herokuapp.com/posts';
       this.axios.get(uri).then(response => {
         this.posts = response.data;
+        console.log(this.posts.date);
       });
     },
     methods: {
@@ -47,14 +48,14 @@ import moment from 'moment'
           this.posts.splice(this.posts.indexOf(id), 1);
         });
       },
+      moment () {
+     return moment(this.posts.date).format("MMMM D, YYYY");
+
+     }
 
 },
-filters: {
-  moment: function () {
-return moment().format('YYYY-MM-DD');
 
-}
-}
+
 
 }
 </script>
