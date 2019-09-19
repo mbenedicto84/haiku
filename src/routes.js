@@ -48,7 +48,6 @@ postRoutes.route('/update/:id').post(function (req, res) {
     else {
         post.title = req.body.title;
         post.body = req.body.body;
-            post.body = req.body.date;
         post.recommend = req.body.recommend;
         post.user = req.body.user;
         post.save().then(() => {

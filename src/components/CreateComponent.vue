@@ -20,14 +20,7 @@
               </div>
 
           </div><br />
-          <div class="row">
-
-              <div class="form-group">
-
-                <input type="date" name="date" class="form-control" v-model="post.date">
-              </div>
-
-            </div><br/>
+      
           <div class="row">
 
               <div class="form-group">

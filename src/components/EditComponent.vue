@@ -23,14 +23,6 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Date</label>
-                  <input type="date" name="date" class="form-control" v-model="post.date">
-                </div>
-              </div>
-              </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
                   <label>Recommend</label>
                   <input type="text" class="form-control" v-model="post.recommend">
                 </div>
