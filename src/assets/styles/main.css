@@ -94,7 +94,7 @@ footer {
 	margin-bottom: 100px;
 	text-align: center;
 	color: black;
-	max-width: 70%;
+	max-width: 100%;
 	height: auto;
 	padding: 50px;
 	background-color: white;
@@ -147,7 +147,7 @@ footer {
 	justify-content: center;
 	margin: auto;
 	color: black;
-	max-width: 80%;
+	max-width: 100%;
 	height: auto;
 	margin-bottom: 75px;
 	padding: 30px;
