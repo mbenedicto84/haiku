@@ -63,9 +63,8 @@
     },
     methods: {
       addPost(){
-      let uri = 'https://ichiraku.herokuapp.com/posts/add';
-      this.axios.post(uri, this.post).then((response) => {
-        console.log(response);
+      let uri = 'http://localhost:4000/posts/add';
+      this.axios.post(uri, this.post).then(() => {
          this.$router.push({name: 'posts'});
       });
   }

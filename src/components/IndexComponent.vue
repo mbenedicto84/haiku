@@ -34,29 +34,18 @@ import moment from 'moment'
         }
       },
       created() {
-      let uri = 'https://ichiraku.herokuapp.com/posts';
+      let uri = 'http://localhost:4000/posts';
       this.axios.get(uri).then(response => {
         this.posts = response.data;
-        console.log(response)
-      }).then(response => {
-	console.log(response)
-})
-.catch(error => {
-    console.log(error.response)
-});
+      });
     },
     methods: {
       deletePost(id)
       {
-        let uri = `https://ichiraku.herokuapp.com/posts/delete/${id}`;
+        let uri = `http://localhost:4000/posts/delete/${id}`;
         this.axios.delete(uri).then(response => {
           this.posts.splice(this.posts.indexOf(id), 1);
-        }).then(response => {
-	console.log(response)
-})
-.catch(error => {
-    console.log(error.response)
-});
+        });
       },
 
 },
