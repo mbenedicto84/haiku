@@ -38,7 +38,12 @@ import moment from 'moment'
       this.axios.get(uri).then(response => {
         this.posts = response.data;
         console.log(response)
-      });
+      }).then(response => {
+	console.log(response)
+})
+.catch(error => {
+    console.log(error.response)
+});
     },
     methods: {
       deletePost(id)
