@@ -14,7 +14,10 @@ var serveStatic = require('serve-static');
 const MONGODB_URI = process.env.MONGODB_URI;
 
 
-mongoose.connect(config.DB, { useNewUrlParser: true }).then(
+mongoose.connect('mongodb+srv://mbenedicto:Mabny02@sei-iapho.mongodb.net/test?retryWrites=true&w=majority', {
+  useNewUrlParser: true
+})
+.then(
   () => { console.log('Database is connected') },
   err => { console.log('Can not connect to the database'+ err)}
 );
