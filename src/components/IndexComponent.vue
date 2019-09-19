@@ -42,7 +42,7 @@ import moment from 'moment'
     methods: {
       deletePost(id)
       {
-        let uri = `https://ichiraku.herokuapp.com/delete/${id}`;
+        let uri = `https://ichiraku.herokuapp.com/posts/delete/${id}`;
         this.axios.delete(uri).then(response => {
           this.posts.splice(this.posts.indexOf(id), 1);
         });

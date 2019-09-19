@@ -14,7 +14,7 @@
         }
       },
       created() {
-        let uri = `http://localhost:4000/posts/edit/${this.$route.params.id}`;
+        let uri = `https://ichiraku.herokuapp.com/posts/edit/${this.$route.params.id}`;
         this.axios.get(uri).then((response) => {
             this.post = response.data;
         });
