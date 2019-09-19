@@ -10,7 +10,7 @@
           <div v-for="post in posts" :key="post._id" class="grid">
             <h1> Title: <br/>{{ post.title }}</h1>
             <p> Comment: <br/>{{ post.body }}</p>
-                <p> Date: <br/>{{ moment()  }}</p>
+                <p> Date: <br/>{{ post.date }}</p>
             <p> Recommend: <br/>{{ post.recommend }}</p>
             <h3> by: <br/> {{ post.user}}</h3>
             <router-link :to="{name: 'edit', params: { id: post._id }}" class="btn btn-primary">Edit</router-link>
@@ -48,10 +48,9 @@ import moment from 'moment'
           this.posts.splice(this.posts.indexOf(id), 1);
         });
       },
-      moment () {
-     return moment(this.posts.date).format("MMMM D, YYYY");
-
-     }
+     //  moment () {
+     // return moment(this.post[0].date).slice(0, 5);
+     // }
 
 },
 
