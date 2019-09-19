@@ -37,6 +37,7 @@ import moment from 'moment'
       let uri = 'https://ichiraku.herokuapp.com/posts';
       this.axios.get(uri).then(response => {
         this.posts = response.data;
+        console.log(response)
       });
     },
     methods: {
