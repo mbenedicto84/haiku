@@ -112,6 +112,7 @@ footer {
 	max-width: 1000px;
 	height: auto;
 	padding: 30px;
+	margin-bottom: 150px;
 	background-color: white;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
